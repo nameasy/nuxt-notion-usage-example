@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
 	const response = await notion.databases.query({
 		database_id: databaseId,
 	});
-	const projects = response.results.map((entry) => {
+	const articles = response.results.map((entry) => {
 		const properties = entry.properties;
 		return {
 			title: properties.Name.title[0]?.plain_text || '',
@@ -19,6 +19,6 @@ export default defineEventHandler(async (event) => {
 		};
 	});
 	return {
-		projects,
+		articles,
 	};
 });

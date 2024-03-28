@@ -59,19 +59,19 @@ useHead({
 	],
 });
 
-const projects = ref([]);
+const articles = ref([]);
 
-const fetchProjects = async () => {
+const fetchArticles = async () => {
 	try {
 		const response = await fetch('/api/notion');
 		const data = await response.json();
-		projects.value = data.projects;
+		articles.value = data.articles;
 	} catch (error) {
 		console.error(error);
 	}
 };
 
-onMounted(fetchProjects);
+onMounted(fetchArticles);
 </script>
 
 <template>
@@ -79,8 +79,8 @@ onMounted(fetchProjects);
 		<section class="section">
 			<h1 class="section__title">It’s Nice That Articles</h1>
 			<ul class="article-list">
-				<li v-for="(project, index) in projects" :key="index" class="article-list__item">
-					<card-component :project="project"></card-component>
+				<li v-for="(article, index) in articles" :key="index" class="article-list__item">
+					<card-component :article="article"></card-component>
 				</li>
 			</ul>
 		</section>
