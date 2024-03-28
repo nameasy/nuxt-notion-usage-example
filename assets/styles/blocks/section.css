@@ -1,0 +1,8 @@
+/*(+)*/
+.section__title {
+	font-family: 'DM Serif Display', serif;
+	font-size: var(--text-4xl);
+	line-height: 1.1;
+	margin-bottom: var(--space-lg);
+	text-align: center;
+}

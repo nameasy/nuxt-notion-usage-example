@@ -1,0 +1,16 @@
+body {
+	background-color: #fff;
+	color: #2b2b2b;
+	font-family: 'DM Sans', sans-serif;
+	font-size: var(--text-base);
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+}
+
+img,
+video {
+	vertical-align: middle;
+}

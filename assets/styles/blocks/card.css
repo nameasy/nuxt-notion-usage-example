@@ -1,0 +1,36 @@
+/*(+)*/
+.card__figure {
+	margin-bottom: var(--space-xs);
+}
+
+.card__image {
+	width: 100%;
+}
+
+.card__title {
+	font-size: var(--text-md);
+	hyphens: auto;
+}
+
+.card__title:not(:last-child) {
+	margin-bottom: var(--space-sm);
+}
+
+.card__tags-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-4xs) 0;
+}
+
+.card__tags-button {
+	background-color: #f9f5ff;
+	border-radius: 50rem;
+	color: #6219ff;
+	font-family: 'DM Mono', monospace;
+	font-size: var(--text-sm);
+	padding: var(--space-3xs) var(--space-xs);
+}
+
+.card__tags-button:hover {
+	background-color: #e4deff;
+}

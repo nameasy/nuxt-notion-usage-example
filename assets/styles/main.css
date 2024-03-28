@@ -1,0 +1,11 @@
+@charset 'utf-8';
+@import 'reset.css';
+@import 'variables.css';
+@import 'base.css';
+@import 'blocks/button.css';
+@import 'blocks/page.css';
+@import 'blocks/main.css';
+@import 'blocks/section.css';
+@import 'blocks/article-list.css';
+@import 'blocks/card.css';
+@import 'blocks/visually-hidden.css';

@@ -1,0 +1,7 @@
+/*(+)*/
+.article-list {
+	display: grid;
+	grid-gap: var(--space-md);
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--column-breakpoint)), 1fr));
+	--column-breakpoint: 15rem;
+}
